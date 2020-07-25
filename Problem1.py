@@ -5,4 +5,13 @@
 #
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-print "Problem 1"
+print("Problem 1")
+
+# The sum of multiples of 3 and 5
+sum = 0
+
+for x in range(10):
+    if (x % 3 == 0 or x % 5 == 0):
+        sum += x
+
+print(sum)
