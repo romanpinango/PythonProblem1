@@ -10,8 +10,10 @@ print("Problem 1")
 # The sum of multiples of 3 and 5
 sum = 0
 
+# Iterate over numbers below max value
 for x in range(10):
     if (x % 3 == 0 or x % 5 == 0):
         sum += x
 
-print(sum)
+# Show the result
+print("With max 10 the sum is: " + str(sum))
