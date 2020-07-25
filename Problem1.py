@@ -7,13 +7,16 @@
 
 print("Problem 1")
 
+# We ask the user which will be the limit to evaluate
+limit = input("Define limit to evaluate: ")
+
 # The sum of multiples of 3 and 5
 sum = 0
 
 # Iterate over numbers below max value
-for x in range(10):
+for x in range(int(limit)):
     if (x % 3 == 0 or x % 5 == 0):
         sum += x
 
 # Show the result
-print("With max 10 the sum is: " + str(sum))
+print("With max " + limit + " the sum is: " + str(sum))
