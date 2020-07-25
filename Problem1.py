@@ -5,18 +5,15 @@
 #
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-print("Problem 1")
+def SumDivisiblesBy(n):
+    k = (int(limit) - 1) // n
+    return n * ((k * (k + 1)) // 2)
 
 # We ask the user which will be the limit to evaluate
 limit = input("Define limit to evaluate: ")
 
 # The sum of multiples of 3 and 5
-sum = 0
-
-# Iterate over numbers below max value
-for x in range(int(limit)):
-    if (x % 3 == 0 or x % 5 == 0):
-        sum += x
+sum = SumDivisiblesBy(3) + SumDivisiblesBy(5) - SumDivisiblesBy(15)
 
 # Show the result
 print("With max " + limit + " the sum is: " + str(sum))
